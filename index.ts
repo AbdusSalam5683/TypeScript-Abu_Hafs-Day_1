@@ -65,7 +65,30 @@ const user:{
     name: "John Doe",
     email: "john.doe@example.com",  
     phone: 1234567890,
-    age: 30, // This will cause a TypeScript error because 'age' is not defined in the type 
+    age: 30, 
+    
+    // This will cause a TypeScript error because 'age' is not defined in the type 
 
 
 };
+
+
+
+const  friends4:string[] =['salam', 'balam', 'kalam']
+
+type User6 = {
+  id: number;
+  name: string;
+  age: number;
+};
+
+const users6: User[] = [
+  { id: , name: "Alice", age: 25 },
+  { id: 2, name: "Bob", age: 30 }
+];
+// Array of objects with inline type
+const users5: { id: number; name: string; age: number }[] = [
+  { id: 1, name: "Alice", age: 25 },
+  { id: 2, name: "Bob", age: 30 },
+  { id: 3, name: "Charlie", age: 35 }
+];
