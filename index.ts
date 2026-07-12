@@ -30,6 +30,12 @@
 
 
 // ? conditional operator tarnary operator
+
+let user1 ={profile: {name: "John", age: 30}};
+let userName1: string = user1.profile?.name ?? "Guest";
+console.log(userName1); // Output: "John"   
+
+
  let age: number = 20;
  let isAdult: boolean = age >= 18 ? true : false;
  console.log(isAdult); // Output: true
@@ -47,3 +53,19 @@
     }
 
     
+// non-primitive data types
+
+const user:{
+    name: string;
+    email: string;
+    phone: number;
+    age: number;
+
+} = {
+    name: "John Doe",
+    email: "john.doe@example.com",  
+    phone: 1234567890,
+    age: 30, // This will cause a TypeScript error because 'age' is not defined in the type 
+
+
+};
