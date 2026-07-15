@@ -1,0 +1,76 @@
+# Dependency directories
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.js
+*.js.map
+*.d.ts
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spotless
+.settings/
+.project
+.classpath
+
+# TypeScript cache
+*.tscache
+
+# Coverage directory
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Misc
+.pnpm-store/
+.eslintcache
+.stylelintcache
+
+# Docker (if you use it)
+*.pid
+*.seed
+*.pid.lock
+
+# Secrets / keys
+*.pem
+*.key
+*.crt
+*.p12
+
+# Backup files
+*.bak
+*.orig
+*.rej
